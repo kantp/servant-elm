@@ -38,7 +38,7 @@ main = hspec $
       postTwoSource    <- readFile "test/postTwoSource.elm"
       bookTypeSource   <- readFile "test/bookTypeSource.elm"
       decodeBookSource <- readFile "test/decodeBookSource.elm"
-      getBooksBySource <- readFile "test/getBooksBySource.elm"
+      getBooksBySource <- readFile "test/getBooksByIdSource.elm"
       getBooksSource   <- readFile "test/getBooksSource.elm"
       let generated = map (++ "\n") (generateElmForAPI (Proxy :: Proxy TestApi))
           expected  = [ getOneSource
